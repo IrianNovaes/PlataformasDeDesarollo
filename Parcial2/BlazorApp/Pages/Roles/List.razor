@@ -14,6 +14,10 @@
 <p>
     <button class="btn" @onclick="()=>Create()">Crear Nuevo</button>
 </p>
+
+@if(roles == null){
+<p><em>Loading...</em></p>
+}else{
 <table class="table">
     <thead>
         <tr>
@@ -47,10 +51,10 @@
         }
     </tbody>
 </table>
-
+}
 
 @code {
-    private List<Rol> roles = new List<Rol>();
+    private List<Rol> roles;
 
     protected override async Task OnInitializedAsync()
     {

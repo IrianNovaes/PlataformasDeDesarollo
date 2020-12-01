@@ -149,7 +149,6 @@ C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\net5.0\BlazorApp.RazorTargetAssemblyInfo.cs
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\appsettings.json
-C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\BlazorApp.StaticWebAssets.xml
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\BlazorApp.exe
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\BlazorApp.deps.json
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\BlazorApp.runtimeconfig.json
@@ -214,11 +213,9 @@ C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\net5.0\Razor\Pages\TipoTareas\Details.razor.g.cs
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\net5.0\Razor\Pages\TipoTareas\Edit.razor.g.cs
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\net5.0\Razor\Pages\Usuarios\Edit.razor.g.cs
-C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication1.Views.dll
-C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication1.Views.pdb
-C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication1.exe
-C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication1.dll
-C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication1.pdb
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication.exe
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication.dll
 C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\bin\Debug\net5.0\WebApplication.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\net5.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Usuarios\List.razor.g.cs
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\obj\Debug\net5.0\Razor\Pages\Usuarios\List.razor.g.cs

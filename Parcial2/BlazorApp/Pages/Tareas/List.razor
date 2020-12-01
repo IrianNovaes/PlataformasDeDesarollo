@@ -12,6 +12,10 @@
 <p>
     <button class="btn" @onclick="()=>Create()">Crear Nueva</button>
 </p>
+
+@if(tareas == null){
+<p><em>Loading...</em></p>
+}else{
 <table class="table">
     <thead>
         <tr>
@@ -83,10 +87,10 @@
         }
     </tbody>
 </table>
-
+}
 
 @code {
-    private List<Tarea> tareas = new List<Tarea>();
+    private List<Tarea> tareas;
 
     protected override async Task OnInitializedAsync()
     {

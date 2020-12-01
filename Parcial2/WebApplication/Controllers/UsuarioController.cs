@@ -8,9 +8,9 @@ using Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace WebApplication.Controllers
-{
-    [Route("api/[controller]")]
+{   
     [ApiController]
+    [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
         private readonly TareasDbContext _context;

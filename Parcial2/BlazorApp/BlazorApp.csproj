@@ -10,7 +10,6 @@
     <Content Remove="Pages\Roles\List.razor" />
     <Content Remove="Pages\Tareas\List.razor" />
     <Content Remove="Pages\TipoTareas\List.razor" />
-    <Content Remove="Pages\Usuarios\List.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,7 +30,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\Entidades.csproj" />
-    <ProjectReference Include="..\WebApplication1\WebApplication1.csproj" />
     <ProjectReference Include="..\WebApplication\WebApplication.csproj" />
   </ItemGroup>
 

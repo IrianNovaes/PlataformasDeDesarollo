@@ -98,7 +98,7 @@ using Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 56 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Create.razor"
+#line 58 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Create.razor"
        
 
     private List<Rol> roles = new List<Rol>();

@@ -23,6 +23,7 @@ namespace WebApplication.Controllers
         [HttpGet]
         public List<Detalle> Get()
         {
+           
             return  _context.Detalles.ToList();
         }
 

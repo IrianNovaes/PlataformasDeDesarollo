@@ -9,53 +9,55 @@
 
 <h1>Detalles</h1>
 
-<div>
-    <h4>Usuario</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            Id
-        </dt>
-        <dd class="col-sm-10">
-            @Modelo.Id
-        </dd>
-        <dt class="col-sm-2">
-            Nombre
-        </dt>
-        <dd class="col-sm-10">
-            @Modelo.Nombre
-        </dd>
-        <dt class="col-sm-2">
-            Apodo
-        </dt>
-        <dd class="col-sm-10">
-            @Modelo.Apodo
-        </dd>
-        <dt class="col-sm-2">
-            Clave
-        </dt>
-        <dd class="col-sm-10">
-            @Modelo.Clave
-        </dd>
-        <dt class="col-sm-2">
-            Rol
-        </dt>
-        <dd class="col-sm-10">
-            @Modelo.Rol.Nombre
-        </dd>
-    </dl>
-</div>
-<div>
-    <button class="btn" @onclick="()=>Edit(Modelo.Id)">Editar</button>
-    <button class="btn btn-danger" @onclick="()=>Erase(Modelo.Id)">Borrar</button>
-    <button class="btn" @onclick="()=>GoBack()">Volver</button>
-</div>
 
-@code {
-    [Parameter]
-    public int Id { get; set; }
+    <div>
+        <h4>Usuario</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Id
+            </dt>
+            <dd class="col-sm-10">
+                @Modelo.Id
+            </dd>
+            <dt class="col-sm-2">
+                Nombre
+            </dt>
+            <dd class="col-sm-10">
+                @Modelo.Nombre
+            </dd>
+            <dt class="col-sm-2">
+                Apodo
+            </dt>
+            <dd class="col-sm-10">
+                @Modelo.Apodo
+            </dd>
+            <dt class="col-sm-2">
+                Clave
+            </dt>
+            <dd class="col-sm-10">
+                @Modelo.Clave
+            </dd>
+            <dt class="col-sm-2">
+                Rol
+            </dt>
+            <dd class="col-sm-10">
+                @Modelo.Rol.Nombre
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <button class="btn" @onclick="() => Edit(Modelo.Id)">Editar</button>
+        <button class="btn btn-danger" @onclick="() => Erase(Modelo.Id)">Borrar</button>
+        <button class="btn" @onclick="() => GoBack()">Volver</button>
+    </div>
+    
 
-    public Usuario Modelo = new Usuario();
+    @code {
+        [Parameter]
+        public int Id { get; set; }
+
+public Usuario Modelo = new Usuario();
 
     protected override async Task OnInitializedAsync()
     {
@@ -86,4 +88,4 @@
         navigation.NavigateTo("usuarios/list");
     }
 
-}
+    }

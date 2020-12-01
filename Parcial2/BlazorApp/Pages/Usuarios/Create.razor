@@ -35,9 +35,11 @@
 
                 <InputSelect for="Usuario.RolId" class="form-control" @bind-Value="RolId">
                     <option value="0"> Elija un Rol </option>
+                    @if(roles != null){
                     @foreach (var item in roles)
                     {
                         <option value="@item.Id">@item.Nombre</option>
+                    }
                     }
                 </InputSelect>
             </div>

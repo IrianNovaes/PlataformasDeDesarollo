@@ -98,12 +98,12 @@ using Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Details.razor"
-       
-    [Parameter]
-    public int Id { get; set; }
+#line 56 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Details.razor"
+           
+        [Parameter]
+        public int Id { get; set; }
 
-    public Usuario Modelo = new Usuario();
+public Usuario Modelo = new Usuario();
 
     protected override async Task OnInitializedAsync()
     {
@@ -134,6 +134,7 @@ using Entidades;
         navigation.NavigateTo("usuarios/list");
     }
 
+    
 
 #line default
 #line hidden

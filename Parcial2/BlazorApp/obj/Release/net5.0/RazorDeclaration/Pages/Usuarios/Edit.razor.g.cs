@@ -98,7 +98,7 @@ using Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 56 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Edit.razor"
+#line 60 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Edit.razor"
        
     [Parameter]
     public int Id { get; set; }

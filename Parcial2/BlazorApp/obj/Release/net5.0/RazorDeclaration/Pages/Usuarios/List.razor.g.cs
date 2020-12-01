@@ -76,21 +76,21 @@ using BlazorApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Details.razor"
+#line 3 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\List.razor"
 using BlazorApp.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Details.razor"
+#line 4 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\List.razor"
 using Entidades;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/usuarios/details/{id:int}")]
-    public partial class Details : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/usuarios/list")]
+    public partial class List : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -98,24 +98,32 @@ using Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 56 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\Details.razor"
-           
-        [Parameter]
-        public int Id { get; set; }
-
-public Usuario Modelo = new Usuario();
+#line 61 "C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\BlazorApp\Pages\Usuarios\List.razor"
+       
+    private List<Usuario> usuarios;
 
     protected override async Task OnInitializedAsync()
     {
-        if (Id > 0)
-        {
-            Modelo = await service.Get(Id);
-        }
+        var valor = new Usuario();
+        valor.Nombre = "test";
+        await service.Create(valor);
+        usuarios = await service.GetAll();
+
     }
 
     protected void Edit(int id)
     {
         navigation.NavigateTo("usuarios/edit/" + id);
+    }
+
+    protected void Details(int id)
+    {
+        navigation.NavigateTo("usuarios/details/" + id);
+    }
+
+    protected void Create()
+    {
+        navigation.NavigateTo("usuarios/create/");
     }
 
     async Task Erase(int id)
@@ -125,16 +133,10 @@ public Usuario Modelo = new Usuario();
         if (confirmed)
         {
             await service.Delete(id);
-            navigation.NavigateTo("usuarios/list");
+            usuarios = await service.GetAll();
         }
     }
 
-    protected void GoBack()
-    {
-        navigation.NavigateTo("usuarios/list");
-    }
-
-    
 
 #line default
 #line hidden

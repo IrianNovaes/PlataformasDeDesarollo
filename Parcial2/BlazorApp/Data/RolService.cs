@@ -12,37 +12,37 @@ namespace BlazorApp.Data
 {
     public class RolService
     {
-        private string con = "https://localhost:44353/api/";
+        private readonly IRemoteService remoteService = RestService.For<IRemoteService>("https://localhost:44370/api/");
 
 
         public async Task<Rol> Get(int id)
         {
-            var remoteService = RestService.For<IRemoteService>(con);
+            
             return await remoteService.GetRol(id);
 
         }
 
         public async Task<List<Rol>> GetAll()
         {
-            var remoteService = RestService.For<IRemoteService>(con);
+             
             return await remoteService.GetAllRol();
         }
 
         public async Task<Rol> Delete(int id)
         {
-            var remoteService = RestService.For<IRemoteService>(con);
+             
             return await remoteService.DeleteRol(id);
         }
 
         public async Task<Rol> Update(int id, Rol valor)
         {
-            var remoteService = RestService.For<IRemoteService>(con);
+             
             return await remoteService.UpdateRol(id, valor);
         }
 
         public async Task<Rol> Create(Rol valor)
         {
-            var remoteService = RestService.For<IRemoteService>(con);
+             
             return await remoteService.CreateRol(valor);
         }
     }

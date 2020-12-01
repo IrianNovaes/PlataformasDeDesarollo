@@ -13,6 +13,10 @@
 <p>
     <button class="btn" @onclick="()=>Create()">Crear Nuevo</button>
 </p>
+
+@if(usuarios == null){
+<p><em>Loading...</em></p>
+}else{
 <table class="table">
     <thead>
         <tr>
@@ -52,13 +56,14 @@
         }
     </tbody>
 </table>
-
+}
 
 @code {
-    private List<Usuario> usuarios = new List<Usuario>();
+    private List<Usuario> usuarios;
 
     protected override async Task OnInitializedAsync()
     {
+       
         usuarios = await service.GetAll();
 
     }

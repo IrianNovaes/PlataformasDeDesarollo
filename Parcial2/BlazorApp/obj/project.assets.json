@@ -2234,27 +2234,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "WebApplication1/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Entidades": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.0",
-          "Refit": "5.2.4"
-        },
-        "compile": {
-          "bin/placeholder/WebApplication1.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WebApplication1.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -7767,11 +7746,6 @@
       "type": "project",
       "path": "../WebApplication/WebApplication.csproj",
       "msbuildProject": "../WebApplication/WebApplication.csproj"
-    },
-    "WebApplication1/1.0.0": {
-      "type": "project",
-      "path": "../WebApplication1/WebApplication1.csproj",
-      "msbuildProject": "../WebApplication1/WebApplication1.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7784,8 +7758,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.0",
       "Refit >= 5.2.4",
-      "WebApplication >= 1.0.0",
-      "WebApplication1 >= 1.0.0"
+      "WebApplication >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7822,9 +7795,6 @@
           "projectReferences": {
             "C:\\Users\\Panny\\source\\repos\\PlataformasDeDesarollo\\Parcial2\\ClassLibrary1\\Entidades.csproj": {
               "projectPath": "C:\\Users\\Panny\\source\\repos\\PlataformasDeDesarollo\\Parcial2\\ClassLibrary1\\Entidades.csproj"
-            },
-            "C:\\Users\\Panny\\source\\repos\\PlataformasDeDesarollo\\Parcial2\\WebApplication1\\WebApplication1.csproj": {
-              "projectPath": "C:\\Users\\Panny\\source\\repos\\PlataformasDeDesarollo\\Parcial2\\WebApplication1\\WebApplication1.csproj"
             },
             "C:\\Users\\Panny\\source\\repos\\PlataformasDeDesarollo\\Parcial2\\WebApplication\\WebApplication.csproj": {
               "projectPath": "C:\\Users\\Panny\\source\\repos\\PlataformasDeDesarollo\\Parcial2\\WebApplication\\WebApplication.csproj"
