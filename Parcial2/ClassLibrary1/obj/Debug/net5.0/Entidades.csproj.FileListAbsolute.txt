@@ -1,0 +1,16 @@
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\net5.0\Entidades.runtimeconfig.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\net5.0\Entidades.runtimeconfig.dev.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\net5.0\Entidades.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.csprojAssemblyReference.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\RefitStubs.g.cs
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\net5.0\Entidades.genruntimeconfig.cache

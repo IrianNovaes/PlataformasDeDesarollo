@@ -1,0 +1,31 @@
+﻿@page "/recursos/edit/{id:int}"
+
+@using BlazorApp.Data
+@using Entidades
+
+@inject RecursoService service
+
+@inject NavigationManager navigation
+@inject IJSRuntime JsRuntime
+
+<h1>Editar</h1>
+
+<h4>Recurso</h4>
+<hr />
+<div class="row">
+    Pagina en desarollo.
+</div>
+
+<div>
+    <button class="btn" @onclick="()=>GoBack()">Volver</button>
+</div>
+
+
+@code {
+
+    protected void GoBack()
+    {
+        navigation.NavigateTo("recursos/list");
+    }
+
+}

@@ -1,0 +1,92 @@
+﻿@page "/usuarios/list"
+
+@using BlazorApp.Data
+@using Entidades
+
+@inject UsuarioService service
+@inject NavigationManager navigation
+@inject IJSRuntime JsRuntime
+
+<h3>List</h3>
+
+
+<p>
+    <button class="btn" @onclick="()=>Create()">Crear Nuevo</button>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apodo
+            </th>
+            <th>
+                Rol
+            </th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in usuarios)
+        {
+            <tr>
+                <td>
+                    @item.Nombre
+                </td>
+                <td>
+                    @item.Apodo
+                </td>
+                <td>
+                    @item.Rol.Nombre
+                </td>
+                <td>
+                    <button class="btn" @onclick="()=>Details(item.Id)">Detalles</button>
+                    <button class="btn" @onclick="()=>Edit(item.Id)">Editar</button>
+                    <button class="btn btn-danger" @onclick="()=>Erase(item.Id)">Borrar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code {
+    private List<Usuario> usuarios = new List<Usuario>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        usuarios = await service.GetAll();
+
+    }
+
+    protected void Edit(int id)
+    {
+        navigation.NavigateTo("usuarios/edit/" + id);
+    }
+
+    protected void Details(int id)
+    {
+        navigation.NavigateTo("usuarios/details/" + id);
+    }
+
+    protected void Create()
+    {
+        navigation.NavigateTo("usuarios/create/");
+    }
+
+    async Task Erase(int id)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Desea elimiar el usuario?");
+
+        if (confirmed)
+        {
+            await service.Delete(id);
+            usuarios = await service.GetAll();
+        }
+    }
+
+}

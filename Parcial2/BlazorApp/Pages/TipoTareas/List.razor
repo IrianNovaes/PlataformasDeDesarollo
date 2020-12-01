@@ -1,0 +1,85 @@
+﻿@page "/tipotareas/list"
+
+@using BlazorApp.Data
+@using Entidades
+
+@inject TipoTareaService service
+@inject NavigationManager navigation
+@inject IJSRuntime JsRuntime
+
+<h3>List</h3>
+
+
+<p>
+    <button class="btn" @onclick="()=>Create()">Crear Nuevo</button>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in tipoTareas)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Nombre
+                </td>
+                <td>
+                    <button class="btn" @onclick="()=>Details(item.Id)">Detalles</button>
+                    <button class="btn" @onclick="()=>Edit(item.Id)">Editar</button>
+                    <button class="btn btn-danger" @onclick="()=>Erase(item.Id)">Borrar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code {
+    private List<TipoTarea> tipoTareas = new List<TipoTarea>();;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tipoTareas = await service.GetAll();
+    }
+
+    protected void Edit(int id)
+    {
+        navigation.NavigateTo("tipotareas/edit/" + id);
+    }
+
+    protected void Details(int id)
+    {
+        navigation.NavigateTo("tipotareas/details/" + id);
+    }
+
+    protected void Create()
+    {
+        navigation.NavigateTo("tipotareas/create/");
+    }
+
+    async Task Erase(int id)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Desea elimiar el Tipo de Tarea?");
+
+        if (confirmed)
+        {
+            await service.Delete(id);
+            tipoTareas = await service.GetAll();
+        }
+    }
+
+}

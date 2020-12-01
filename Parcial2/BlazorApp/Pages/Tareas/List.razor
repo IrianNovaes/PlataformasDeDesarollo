@@ -1,0 +1,122 @@
+﻿@page "/tareas/list"
+@using BlazorApp.Data
+@using Entidades
+
+@inject TareaService service
+@inject NavigationManager navigation
+@inject IJSRuntime JsRuntime
+
+<h3>List</h3>
+
+
+<p>
+    <button class="btn" @onclick="()=>Create()">Crear Nueva</button>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Titulo
+            </th>
+            <th>
+                Vencimiento
+            </th>
+            <th>
+                Estimacion
+            </th>
+            <th>
+                Responsable
+            </th>
+            <th>
+                Estado
+            </th>
+            <th>
+                Tipo
+            </th>
+            <th>
+                Detalles
+            </th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in tareas)
+        {
+            <tr>
+
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Titulo
+                </td>
+                <td>
+                    @item.Vencimiento
+                </td>
+                <td>
+                    @item.Estimacion
+                </td>
+                <td>
+                    @item.Responsable.Nombre
+                </td>
+                <td>
+                    @item.Estado
+                </td>
+                <td>
+                    @item.Tipo
+                </td>
+                <td>
+                    @item.Detalles.Count()
+                </td>
+
+                <td>
+                    <button class="btn" @onclick="()=>Details(item.Id)">Detalles</button>
+                    <button class="btn" @onclick="()=>Edit(item.Id)">Editar</button>
+                    <button class="btn btn-danger" @onclick="()=>Erase(item.Id)">Borrar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code {
+    private List<Tarea> tareas = new List<Tarea>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        tareas = await service.GetAll();
+    }
+
+    protected void Edit(int id)
+    {
+        navigation.NavigateTo("tareas/edit/" + id);
+    }
+
+    protected void Details(int id)
+    {
+        navigation.NavigateTo("tareas/details/" + id);
+    }
+
+    protected void Create()
+    {
+        navigation.NavigateTo("tareas/create/");
+    }
+
+    async Task Erase(int id)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Desea elimiar la Tarea?");
+
+        if (confirmed)
+        {
+            await service.Delete(id);
+            tareas = await service.GetAll();
+        }
+    }
+
+}

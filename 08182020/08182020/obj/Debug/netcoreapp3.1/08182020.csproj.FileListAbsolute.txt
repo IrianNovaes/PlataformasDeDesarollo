@@ -1,0 +1,13 @@
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\bin\Debug\netcoreapp3.1\08182020.exe
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\bin\Debug\netcoreapp3.1\08182020.deps.json
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\bin\Debug\netcoreapp3.1\08182020.runtimeconfig.json
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\bin\Debug\netcoreapp3.1\08182020.runtimeconfig.dev.json
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\bin\Debug\netcoreapp3.1\08182020.dll
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\bin\Debug\netcoreapp3.1\08182020.pdb
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\obj\Debug\netcoreapp3.1\08182020.csprojAssemblyReference.cache
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\obj\Debug\netcoreapp3.1\08182020.AssemblyInfoInputs.cache
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\obj\Debug\netcoreapp3.1\08182020.AssemblyInfo.cs
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\obj\Debug\netcoreapp3.1\08182020.csproj.CoreCompileInputs.cache
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\obj\Debug\netcoreapp3.1\08182020.dll
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\obj\Debug\netcoreapp3.1\08182020.pdb
+C:\Users\Panny\Documents\Projects\Plataformas de Desarollo\08182020\08182020\obj\Debug\netcoreapp3.1\08182020.genruntimeconfig.cache

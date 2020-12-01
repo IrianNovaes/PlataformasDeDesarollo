@@ -1,0 +1,13 @@
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\netcoreapp3.1\Entidades.deps.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\netcoreapp3.1\Entidades.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\netcoreapp3.1\Entidades.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\Entidades.csprojAssemblyReference.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\Entidades.AssemblyInfoInputs.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\Entidades.AssemblyInfo.cs
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\Entidades.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\Entidades.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\netcoreapp3.1\Entidades.runtimeconfig.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\bin\Debug\netcoreapp3.1\Entidades.runtimeconfig.dev.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\RefitStubs.g.cs
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\Parcial2\ClassLibrary1\obj\Debug\netcoreapp3.1\Entidades.genruntimeconfig.cache

@@ -1,0 +1,81 @@
+﻿@page "/usuarios/create"
+
+@using BlazorApp.Data
+@using Entidades
+
+@inject UsuarioService serviceUsuario
+@inject RolService serviceRol
+@inject NavigationManager navigation
+@inject IJSRuntime JsRuntime
+
+<h1>Crear</h1>
+
+<h4>Usuario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm Model="@Modelo" OnValidSubmit="@OnSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label for="Usuario.Nombre" class="control-label">Nombre</label>
+                <InputText for="Usuario.Nombre" class="form-control" @bind-Value="Modelo.Nombre" />
+            </div>
+            <div class="form-group">
+                <label for="Usuario.Apodo" class="control-label"></label>
+                <InputText for="Usuario.Apodo" class="form-control" @bind-Value="Modelo.Apodo" />
+            </div>
+            <div class="form-group">
+                <label for="Usuario.Clave" class="control-label"></label>
+                <InputText for="Usuario.Clave" class="form-control" @bind-Value="Modelo.Clave" />
+            </div>
+            <div class="form-group">
+                <label for="Usuario.RolId" class="control-label"></label>
+
+                <InputSelect for="Usuario.RolId" class="form-control" @bind-Value="RolId">
+                    <option value="0"> Elija un Rol </option>
+                    @foreach (var item in roles)
+                    {
+                        <option value="@item.Id">@item.Nombre</option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" />
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+<div>
+    <button class="btn" @onclick="()=>GoBack()">Volver</button>
+</div>
+
+
+@code {
+
+    private List<Rol> roles = new List<Rol>();
+    public string RolId { get; set; }
+
+    public Usuario Modelo = new Usuario();
+
+    protected override async Task OnInitializedAsync()
+    {
+        roles = await serviceRol.GetAll();
+    }
+
+    private async void OnSubmit()
+    {
+        Modelo.RolId = int.Parse(RolId);
+        await serviceUsuario.Create(Modelo);
+        navigation.NavigateTo("usuarios/list");
+    }
+
+
+    protected void GoBack()
+    {
+        navigation.NavigateTo("usuarios/list");
+    }
+
+}

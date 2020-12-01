@@ -1,0 +1,16 @@
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\09082020.exe
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\09082020.deps.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\09082020.runtimeconfig.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\09082020.runtimeconfig.dev.json
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\09082020.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\09082020.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.csprojAssemblyReference.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.AssemblyInfoInputs.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.AssemblyInfo.cs
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.csproj.CoreCompileInputs.cache
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.csproj.CopyComplete
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.dll
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.pdb
+C:\Users\Panny\source\repos\PlataformasDeDesarollo\09082020\09082020\obj\Debug\netcoreapp3.1\09082020.genruntimeconfig.cache
